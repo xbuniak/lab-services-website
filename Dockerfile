@@ -6,7 +6,7 @@ RUN apk add --no-cache apache2
 #   Adding Web Content   #
 COPY website/ /var/www/localhost/htdocs/
 # Change right access for none-root usage (make it works on openshift)
-RUN chown -R apache:0 /var/www/localhost/htdocs && chmod -R g=u /var/www/localhost/htdocs \
+RUN chown -R apache:0 /var/www/localhost/htdocs && chmod -R g=u /var/www/localhost/htdocs 
         && chown apache:0 /var/log/apache2 && chmod -R g=u /var/log/apache2 \
         && ln -sf /dev/stdout /var/log/apache2/access.log \
         && ln -sf /dev/stderr /var/log/apache2/error.log \
