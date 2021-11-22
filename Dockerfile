@@ -1,6 +1,5 @@
 FROM alpine
 MAINTAINER Xavier
-RUN apk add --no-cache apache2
  #   Http server installation   #
 RUN apk add --no-cache apache2
 #   Adding Web Content   #
