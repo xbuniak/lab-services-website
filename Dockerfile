@@ -1,7 +1,7 @@
 # Default will get ppc64le
-#FROM alpine
+FROM alpine
 # ARM 64/v8
-FROM alpine@sha256:bd9137c3bb45dbc40cde0f0e19a8b9064c2bc485466221f5e95eb72b0d0cf82e
+#FROM alpine@sha256:bd9137c3bb45dbc40cde0f0e19a8b9064c2bc485466221f5e95eb72b0d0cf82e
 
 # ---------------------------- #
 #   Http server installation   #
